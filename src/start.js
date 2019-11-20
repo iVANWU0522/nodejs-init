@@ -3,7 +3,7 @@ const presets = [
     '@babel/preset-env',
     {
       targets: {
-        node: '11.15.0'
+        node: '10.13.0'
       }
     }
   ]
