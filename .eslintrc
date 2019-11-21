@@ -1,0 +1,33 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "airbnb",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 8
+  },
+  "rules": {
+    "no-console": "error",
+    "linebreak-style": ["error", "unix"],
+    "no-undefined": 2,
+    "no-undef": 0,
+    "no-unexpected-multiline": 0,
+    "prefer-const": ["error"],
+    "quotes": ["error", "single", { "allowTemplateLiterals": true, "avoidEscape": true }],
+    "semi": ["error", "always"],
+    "prettier/prettier": ["error", { "singleQuote": true }],
+    # "no-implicit-dependencies": [true, "dev"],
+    "func-names": ["error", "never"]
+  }
+}
